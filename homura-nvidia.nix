@@ -135,7 +135,6 @@
       yakuake
       gnupg
       ungoogled-chromium
-      godot_4
       git
     #  thunderbird
     ];
