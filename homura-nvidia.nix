@@ -13,6 +13,8 @@
   # Nvidia boot config -Piper
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+  # NTFS mount fix
+  boot.supportedFilesystems = [ "ntfs" ];
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
