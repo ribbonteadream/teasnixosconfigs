@@ -138,6 +138,7 @@
       gnupg
       ungoogled-chromium
       git
+      pinentry
     #  thunderbird
     ];
   };
