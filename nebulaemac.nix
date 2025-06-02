@@ -99,6 +99,7 @@
       godot_4
       keepassxc
       kdePackages.kgpg
+      zsh
     #  thunderbird
     ];
   };
