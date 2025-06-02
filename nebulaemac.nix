@@ -110,7 +110,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-
+  # Enable ZSH and set it for my user -Piper
+  programs.zsh.enable = true;
+  users.users.piper.shell = pkgs.zsh;
   # Enable flatpak support -Piper
   services.flatpak.enable = true;
 
