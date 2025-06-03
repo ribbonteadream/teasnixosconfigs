@@ -17,10 +17,9 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
+  boot.kernelParams = ["iommu.passthrough=1"]; # Macbook SPI workaround -Piper
   networking.hostName = "nebulaemac"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -100,6 +99,9 @@
       keepassxc
       kdePackages.kgpg
       zsh
+      fastfetch
+      kdePackages.partitionmanager
+      kdePackages.kpmcore
     #  thunderbird
     ];
   };
